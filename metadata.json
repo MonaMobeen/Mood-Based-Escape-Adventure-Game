@@ -1,0 +1,6 @@
+{
+  "name": "Barbie: Malibu Runway Dash",
+  "description": "A vibrant 60fps Malibu boardwalk and fashion runway dash game with customizable looks, glam twirl dashes, and three sunlit stages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

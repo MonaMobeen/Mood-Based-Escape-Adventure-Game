@@ -1,0 +1,1565 @@
+# MASTER IMPLEMENTATION PROMPT — LITTLE ESCAPE
+## Transform My Existing Game into a Complete, Premium Multi-Experience Casual Gaming Platform
+
+Act as a senior game developer, full-stack engineer, game designer, UI/UX architect, animation specialist, and product strategist.
+
+I want you to transform my **existing game project** into a polished, interactive, feature-rich casual gaming platform called:
+
+# LITTLE ESCAPE
+### Your World. Your Mood. Your Little Happiness.
+
+**Core tagline:** Take a break. Explore a new world. Find your little happiness.
+
+This is an implementation task, not a brainstorming or design-only task.
+
+Your responsibility is to inspect my existing project, understand its current architecture, preserve its working features, and implement the complete experience described below directly into the existing application.
+
+Do not create a separate demo, a disconnected prototype, or a second application.
+
+---
+
+# PART 1 — UNDERSTAND THE PRODUCT VISION
+
+## 1.1 What is Little Escape?
+
+Little Escape is a multi-experience casual gaming platform where users can explore different interactive worlds depending on what kind of experience they feel like enjoying.
+
+It brings together:
+
+- Relaxing garden experiences.
+- Peaceful environment exploration.
+- Fashion and character customization.
+- Island exploration and discovery.
+- Room organization and makeover.
+- Hidden-object mysteries.
+- Running adventures.
+- Additional casual challenges and creative activities.
+
+Every experience should feel like a meaningful, playable world rather than a static screen with decorative buttons.
+
+## 1.2 What problem does this game solve?
+
+Many people experience boredom, repetitive entertainment, daily routine fatigue, and a lack of variety in casual games.
+
+A lot of casual games focus on only one gameplay style.
+
+Little Escape brings multiple different casual experiences together in one accessible platform.
+
+Users can choose whether they want to explore, create, organize, discover, or enjoy a peaceful environment.
+
+The goal is to offer:
+- Variety in entertainment.
+- Freedom of choice.
+- Creative expression.
+- Interactive discovery.
+- Relaxing, low-pressure gameplay.
+- Satisfying small accomplishments.
+
+Do not make medical or therapeutic claims. This is an entertainment experience, not a mental-health treatment product.
+
+---
+
+# PART 2 — FIRST INSPECT THE EXISTING PROJECT
+
+Before modifying anything:
+
+1. Inspect the entire existing codebase.
+2. Identify the framework, programming language, game engine, components, routes, assets, and current architecture.
+3. Understand all existing game screens and gameplay mechanics.
+4. Identify reusable components and existing functionality.
+5. Find broken buttons, incomplete interactions, placeholder sections, and technical issues.
+6. Understand how current game progress and state are stored.
+7. Determine how the existing application is launched and built.
+
+Create an internal implementation plan based on the actual project.
+
+### Critical preservation requirements
+
+- Do not delete the existing project.
+- Do not replace the application with an unrelated template.
+- Do not remove working gameplay.
+- Do not break existing routes or components.
+- Do not unnecessarily rewrite the entire architecture.
+- Preserve useful existing assets and functionality.
+- Integrate new features into the existing application.
+- Refactor only when genuinely necessary.
+- Maintain compatibility with the existing technology stack.
+
+If an existing feature can be upgraded, upgrade it rather than replacing it without reason.
+
+After inspecting the project, begin implementation. Do not stop after giving me a plan.
+
+---
+
+# PART 3 — COMPLETE GAME EXPERIENCE AND NAVIGATION
+
+Build a polished main experience for Little Escape.
+
+## 3.1 Launch experience
+
+When users open the game for the first time, show an attractive introductory experience.
+
+Include:
+
+- Premium animated logo reveal.
+- Little Escape branding.
+- Beautiful background environment.
+- Short welcome message.
+- Start Exploring button.
+- Optional sound toggle.
+- Smooth transition into the main experience.
+
+Welcome message:
+
+"Welcome to Little Escape. Your little world of discovery, creativity and happiness."
+
+Keep the introduction short and engaging.
+
+Users should be able to skip it.
+
+Returning users should not have to watch the introduction every time.
+
+## 3.2 Mood-based experience selection
+
+After onboarding, introduce an optional mood-based experience selector.
+
+Heading:
+
+**"What kind of experience are you in the mood for today?"**
+
+Subtitle:
+
+"Choose a little experience for yourself. You can change your choice anytime."
+
+Create beautiful interactive mood cards.
+
+Each card should have a distinctive illustration, title, short description, and working selection interaction.
+
+### Mood options and their destinations
+
+1. "I'm feeling tired"
+   → Peaceful Garden
+
+2. "I want to relax"
+   → Peaceful World
+
+3. "I want to be creative"
+   → Fashion Studio
+
+4. "I want to explore something new"
+   → Dream Island
+
+5. "I want something satisfying"
+   → Room Makeover
+
+6. "I'm bored"
+   → Hidden Object Hunt
+
+7. "I want an adventure"
+   → Running Adventure
+
+When the user selects a mood, show a short transition and open the corresponding experience.
+
+Important:
+- Mood selection must be optional.
+- Include a visible Skip button.
+- Users can directly open any world.
+- Never force users to play the recommended experience.
+- Do not treat mood selections as medical information.
+- Do not unnecessarily save or analyze personal mood history.
+
+## 3.3 Main world selection screen
+
+After onboarding, create a central world-selection experience.
+
+Show six main experience cards:
+
+- Peaceful Garden
+- Peaceful World
+- Fashion Studio
+- Dream Island
+- Room Makeover
+- Hidden Object Hunt
+
+Also provide direct access to Running Adventure.
+
+Each card should have:
+
+- Unique visual identity.
+- Attractive illustration or preview.
+- Short description.
+- Clear Play / Explore interaction.
+- Subtle hover and tap animations.
+- Appropriate visual feedback.
+
+The interface should feel like entering a collection of connected worlds.
+
+## 3.4 Main navigation
+
+Create a consistent navigation system with:
+
+- Home
+- Explore Worlds
+- My Collection
+- Profile
+- Settings
+
+Keep navigation simple and responsive.
+
+Do not clutter gameplay screens with unnecessary navigation elements.
+
+---
+
+# PART 4 — IMPLEMENT ALL SIX INTERACTIVE WORLDS
+
+Each world must have its own environment, UI, interactions, animations, sound design, and gameplay logic.
+
+The worlds should feel different while sharing the same Little Escape identity.
+
+## WORLD 1 — PEACEFUL GARDEN
+
+### Mood
+"I'm feeling tired."
+
+### Main purpose
+Gentle interaction, creativity, and a pleasant garden experience.
+
+### Visual environment
+
+Create a beautiful, interactive garden with:
+
+- Soft morning sunlight.
+- Detailed flowers and plants.
+- Trees and grass.
+- Butterflies.
+- Birds.
+- Flowing water.
+- Garden pathways.
+- Small decorative elements.
+- Natural environmental animations.
+
+The garden should feel alive.
+
+Avoid making it a static background.
+
+### Garden interface
+
+Main area:
+- Full-screen garden scene.
+
+Top:
+- Small collection indicator.
+- Garden progress.
+- Settings.
+
+Bottom:
+- Seeds.
+- Watering tool.
+- Decoration.
+- Garden collection.
+
+Welcome text:
+
+"Welcome to your little garden. Let's make something beautiful."
+
+### Implement these actual interactions
+
+**1. Plant a Flower**
+
+- User selects a seed.
+- User taps an available soil area.
+- Seed is planted.
+- A small planting animation plays.
+- The plant gradually grows.
+- Flower eventually blooms.
+
+**2. Water the Garden**
+
+- User selects a watering can.
+- User drags it over plants.
+- Water droplets appear.
+- Plants respond with small animations.
+- Watering should visibly affect the garden.
+
+**3. Discover Butterflies**
+
+- Butterflies move naturally.
+- Users can tap them.
+- Butterflies fly toward flowers.
+- Different butterflies can be discovered.
+
+**4. Decorate the Garden**
+
+Allow users to place:
+
+- Stones.
+- Benches.
+- Fountains.
+- Lanterns.
+- Flower pots.
+- Decorative plants.
+- Garden pathways.
+
+Provide drag, placement, rotation where supported, and repositioning.
+
+**5. Watch Things Grow**
+
+Garden changes according to user interactions.
+
+Implement:
+- Flower blooming.
+- Plant growth stages.
+- Butterfly visits.
+- Birds appearing.
+- Daylight changes.
+- Rain effects.
+- Water droplets on leaves.
+- Fireflies at night.
+
+### Unique feature: Your Living Garden
+
+Save the garden's actual state.
+
+If the user plants flowers and places decorations, those changes must still exist when they return.
+
+### Gameplay flow
+
+Enter Garden → Choose Flower → Plant → Water → Watch Bloom → Decorate → Save Garden.
+
+No compulsory timer, lives, penalties, or failure screens.
+
+---
+
+## WORLD 2 — PEACEFUL WORLD
+
+### Mood
+"I want to relax."
+
+### Main purpose
+Free exploration of peaceful environments.
+
+Important distinction:
+
+Peaceful Garden is about planting, growing, and creating.
+
+Peaceful World is about exploring environments and enjoying interactive surroundings.
+
+### Implement four environments
+
+**1. Morning Lake**
+
+- Birds.
+- Water reflections.
+- Gentle sunlight.
+- Moving leaves.
+- Water ripples.
+
+Interactions:
+- Tap water to create ripples.
+- Observe birds.
+- Explore the lakeside.
+- Discover small environmental details.
+
+**2. Rainy Cabin**
+
+- Rain outside the window.
+- Cozy interior.
+- Warm lights.
+- Fireplace.
+- Window droplets.
+
+Interactions:
+- Light the fireplace.
+- Change lighting.
+- Observe the rain.
+- Interact with selected cabin objects.
+
+**3. Sunset Beach**
+
+- Animated ocean waves.
+- Beautiful sunset.
+- Moving clouds.
+- Seashells.
+- Beach decorations.
+
+Interactions:
+- Collect seashells.
+- Walk along the beach.
+- Interact with water.
+- Discover hidden beach objects.
+
+**4. Starlight Island**
+
+- Moonlight.
+- Stars.
+- Glowing plants.
+- Fireflies.
+- Nighttime atmosphere.
+
+Interactions:
+- Discover glowing objects.
+- Follow fireflies.
+- Explore the environment.
+
+### Main interface
+
+Bottom navigation:
+
+- Explore
+- Ambient Sounds
+- Activities
+- Customize
+- Photo Mode
+
+### Unique feature: Create Your Atmosphere
+
+Allow users to customize:
+
+- Day or night.
+- Weather.
+- Rain intensity.
+- Lighting.
+- Ambient sounds.
+- Environmental atmosphere.
+
+Add a simple sound mixer:
+
+Rain + Ocean Waves + Wind + Birds.
+
+Provide independent volume controls and mute functionality.
+
+Audio must be optional and controllable.
+
+### Photo Mode
+
+Allow users to:
+- Capture their favorite scenery.
+- Change available camera angles.
+- Hide unnecessary interface elements.
+- Save a snapshot when technically supported.
+
+### Gameplay flow
+
+Enter World → Choose Environment → Explore Freely → Interact With Nature → Customize Atmosphere → Enjoy.
+
+No compulsory missions.
+
+---
+
+## WORLD 3 — FASHION STUDIO
+
+### Mood
+"I want to be creative."
+
+### Main purpose
+Character styling, customization, and self-expression.
+
+Do not create an ordinary dress-up interface with only a few predefined outfits.
+
+Build a proper interactive Fashion Studio.
+
+### Interface layout
+
+Center:
+- Large character preview.
+
+Left:
+- Character rotation.
+- Zoom controls.
+
+Right:
+- Clothing and accessory selection.
+
+Bottom:
+- Category navigation.
+- Color customization.
+
+Top:
+- Save Look.
+- Undo.
+- Randomize.
+
+### Fashion categories
+
+Implement:
+
+- Dresses.
+- Tops.
+- Skirts.
+- Pants.
+- Shoes.
+- Hairstyles.
+- Makeup.
+- Handbags.
+- Jewelry.
+- Accessories.
+
+### Features
+
+**1. Mix & Match**
+
+Users can independently combine different clothing and accessory items.
+
+**2. Color Lab**
+
+Allow compatible items to change color.
+
+Include:
+- Color palette.
+- Available color variations.
+- Custom color selection when supported.
+
+**3. Style Inspiration**
+
+Create optional styling themes:
+
+- Casual Day.
+- Beach Look.
+- Party Night.
+- Royal Style.
+- Minimal Fashion.
+- Fantasy Fashion.
+
+**4. My Fashion Closet**
+
+Users can save created outfits.
+
+Allow them to:
+- View saved looks.
+- Reopen saved looks.
+- Edit existing looks.
+- Delete saved looks.
+
+**5. Before & After**
+
+Compare the original character appearance with the newly styled look.
+
+**6. Random Style Generator**
+
+Randomize compatible fashion items.
+
+Users can further customize the generated outfit.
+
+**7. Fashion Photo Studio**
+
+Allow users to select:
+
+- Background.
+- Lighting.
+- Available character poses.
+- Camera framing.
+
+Save the final fashion creation.
+
+### Important
+
+Provide enough free customization options.
+
+Do not make all meaningful fashion features dependent on payment or difficult unlock conditions.
+
+### Gameplay flow
+
+Choose Character → Select Outfit → Customize Colors → Add Accessories → Preview → Save Look → Create Another.
+
+---
+
+## WORLD 4 — DREAM ISLAND
+
+### Mood
+"I want to explore something new."
+
+### Main purpose
+Exploration, curiosity, environmental discovery, and adventure.
+
+Dream Island must be a playable exploration world, not just a static scenic background.
+
+### Visual environment
+
+Create a beautiful stylized island with:
+
+- Waterfalls.
+- Forests.
+- Flowers.
+- Secret pathways.
+- Beaches.
+- Floating islands.
+- Interactive environmental objects.
+- Natural lighting.
+- Animated wildlife.
+
+### Island locations
+
+**1. Waterfall Cave**
+
+Include:
+- Waterfall.
+- Cave entrance.
+- Hidden objects.
+- Small environmental puzzles.
+
+**2. Flower Forest**
+
+Include:
+- Different flowers.
+- Moving butterflies.
+- Hidden pathways.
+- Discoverable plants.
+
+**3. Secret Beach**
+
+Include:
+- Seashells.
+- Hidden objects.
+- Small discoveries.
+- Beach exploration.
+
+**4. Sky Islands**
+
+Include:
+- Floating platforms.
+- Beautiful viewpoints.
+- Secret locations.
+- Exploration challenges.
+
+### Controls
+
+Implement:
+- Touch-to-move where supported.
+- Directional movement controls when needed.
+- Interaction button.
+- Small discovery journal.
+- Interactive map.
+
+### Discoverable elements
+
+- Secret pathways.
+- Hidden doors.
+- Viewpoints.
+- Collectible shells.
+- Mystery chests.
+- Environmental puzzles.
+- Secret gardens.
+- Hidden messages.
+- New characters.
+- New locations.
+
+### Unique feature: Discovery Journal
+
+Every discovered item or location should be recorded.
+
+Example:
+- Flowers discovered.
+- Secret locations found.
+- Caves explored.
+- Seashells collected.
+
+Include an illustration or icon and a short description for each discovery.
+
+### Unique feature: Living Island
+
+Implement:
+- Day/night cycle.
+- Weather changes.
+- Moving animals.
+- Growing plants.
+- Hidden areas.
+- Environmental events.
+
+### Gameplay flow
+
+Open Map → Select Island → Explore → Find Something New → Interact → Add to Journal → Unlock New Location.
+
+Do not force users to collect everything.
+
+---
+
+## WORLD 5 — ROOM MAKEOVER
+
+### Mood
+"I want something satisfying."
+
+### Main purpose
+Give users visible progress through interactive organizing and decorating.
+
+This should be one of the strongest gameplay experiences.
+
+### Interface layout
+
+Center:
+- Main room canvas.
+
+Left:
+- Task list.
+
+Bottom:
+- Draggable object inventory.
+
+Top:
+- Completion indicator.
+- Settings.
+
+### Initial environment
+
+Start with a genuinely messy room.
+
+Include:
+- Scattered clothes.
+- Misplaced books.
+- Mixed makeup products.
+- Unorganized furniture.
+- Scattered toys.
+- Accessories in the wrong places.
+
+### Organize Mode
+
+Create actual drag-and-drop interactions.
+
+Tasks:
+
+- Put clothes into the wardrobe.
+- Arrange books on the shelf.
+- Place makeup products into organizers.
+- Make the bed.
+- Organize the table.
+- Put accessories in the correct locations.
+
+Correct placements should be recognized by gameplay logic.
+
+### Satisfying micro-interactions
+
+**Perfect Snap**
+
+Correct objects smoothly snap into their intended positions.
+
+**Instant Transformation**
+
+The relevant area becomes visibly organized.
+
+**Final Reveal**
+
+When the room is complete:
+- Camera smoothly zooms out.
+- Show the transformed room.
+- Play a satisfying completion animation.
+- Display a completion message.
+
+### Unique feature: Before & After Slider
+
+Allow users to drag a slider to compare the original messy room with the completed room.
+
+### Design Mode
+
+Create a separate free-decoration mode.
+
+Users can:
+- Move furniture.
+- Change decorations.
+- Select available colors.
+- Change room lighting.
+- Place accessories.
+- Create their own room design.
+
+### Room themes
+
+- Cozy Bedroom.
+- Luxury Bedroom.
+- Minimal Room.
+- Dreamy Pastel Room.
+- Modern Apartment.
+- Creative Studio.
+
+### Save Room
+
+Save:
+- Furniture positions.
+- Selected decorations.
+- Room theme.
+- Colors.
+- Lighting.
+- Completion state.
+
+### Gameplay flow
+
+Enter Messy Room → Select Task → Drag Objects → Complete Arrangement → Watch Transformation → Final Reveal → Save Room.
+
+---
+
+## WORLD 6 — HIDDEN OBJECT HUNT
+
+### Mood
+"I'm bored."
+
+### Main purpose
+Playful discovery, curiosity, mystery solving, and engaging search gameplay.
+
+This should be a genuinely playable hidden-object game.
+
+### Interface layout
+
+Main:
+- Large detailed interactive environment.
+
+Top:
+- Current mission and clue.
+
+Bottom:
+- Objects to find.
+
+Side:
+- Hint.
+- Zoom.
+- Progress indicator.
+
+Optional:
+- Timer.
+
+### Basic mission example
+
+"Can you find these five missing items?"
+
+Possible objects:
+- Lipstick.
+- Necklace.
+- Perfume.
+- Hairbrush.
+- Handbag.
+
+### Innovation 1: Interactive Objects
+
+Objects must not all be static.
+
+Implement interactions such as:
+- Drawers opening.
+- Boxes revealing objects.
+- Curtains moving.
+- Books shifting.
+- Cabinets opening.
+- Objects being revealed behind other objects.
+
+### Innovation 2: Multi-Layer Search
+
+Different searchable locations:
+
+- Table surface.
+- Drawer.
+- Wardrobe.
+- Under the bed.
+- Behind curtains.
+- Inside boxes.
+
+Make the object placement logical and discoverable.
+
+Do not hide objects in impossible or unfair locations.
+
+### Innovation 3: Mystery Missions
+
+Provide clue-based searches.
+
+Examples:
+
+- Find something used for writing.
+- Find something that shines.
+- Find something you wear.
+- Find something used in the garden.
+
+### Innovation 4: Sound Discovery
+
+Optional audio clues.
+
+Implement:
+- Subtle location hints when enabled.
+- Satisfying discovery sounds.
+- Different feedback for different interactions.
+
+Users must be able to mute sounds.
+
+### Innovation 5: Find the Story
+
+Give each environment a small story.
+
+Example:
+
+"Someone is getting ready for a party, but five important things are missing."
+
+The user searches for the missing objects to complete the story.
+
+Create different stories for subsequent levels.
+
+### Innovation 6: Multiple Search Styles
+
+Implement four modes:
+
+1. Classic Hunt — Find objects using a list.
+2. Mystery Hunt — Find objects using clues.
+3. Memory Hunt — Preview objects, then locate them after the preview disappears.
+4. Adventure Hunt — Explore different locations to discover missing objects.
+
+### Difficulty system
+
+- Beginner: Clearly visible objects.
+- Easy: Partially hidden objects.
+- Medium: More detailed environments.
+- Advanced: Multi-layer objects and clues.
+- Expert: Complex search with optional time challenges.
+
+### No Pressure Mode
+
+Allow users to disable:
+- Timer.
+- Penalties.
+- Time-based pressure.
+
+### Gameplay flow
+
+Select Mission → Read Clues → Explore Room → Zoom → Tap Object → Discover → Complete Collection → Unlock Next Mystery.
+
+---
+
+# PART 5 — PRESERVE AND UPGRADE THE EXISTING GAME MODES
+
+The existing game already contains gameplay and assets that must not be lost.
+
+Preserve and improve these existing experiences.
+
+## 5.1 Running Adventure
+
+Keep Running Adventure as an independent playable world.
+
+Improve:
+- Character movement.
+- Running animation.
+- Jumping.
+- Sliding.
+- Rolling.
+- Landing.
+- Idle state.
+- Collision detection.
+- Obstacles.
+- Score.
+- Game-over flow.
+
+### Important control requirement
+
+The three main actions must be displayed together:
+
+JUMP → SLIDE → ROLL
+
+Show all three actions as a coordinated control sequence.
+
+The next required action can be highlighted, but the user must manually tap it.
+
+Do not automatically perform actions on behalf of the player.
+
+Maintain a real timing and reaction challenge.
+
+Use smooth transitions between running, jumping, sliding, rolling, and landing.
+
+When the player fails, show a natural stumble or falling animation.
+
+Do not use unnecessary explosions or exaggerated effects.
+
+## 5.2 Existing Messy Room Game
+
+Preserve its original functionality and improve it using the new Hidden Object Hunt and Room Makeover systems.
+
+Do not remove its existing interactions.
+
+Upgrade:
+- Environment detail.
+- Object variety.
+- Object positioning.
+- Search mechanics.
+- Zoom.
+- Drag interactions.
+- Hints.
+- Mission progression.
+- Level variety.
+
+## 5.3 Existing Dream Room
+
+Preserve the existing Dream Room experience.
+
+Upgrade it with:
+- More interactive furniture.
+- Room customization.
+- Animated curtains.
+- Plants.
+- Lighting.
+- Wardrobe.
+- Vanity.
+- Decorative objects.
+- Furniture placement.
+- Saved room state.
+
+Integrate it into the Room Makeover experience where appropriate.
+
+Avoid creating duplicate systems that perform the same function.
+
+---
+
+# PART 6 — LEVELS, MISSIONS, COLLECTIONS AND REWARDS
+
+The game must offer meaningful replayability.
+
+Do not create a world that has only one playable screen.
+
+Implement a scalable progression system.
+
+### Levels and chapters
+
+Each world should have multiple playable levels or activities.
+
+Examples:
+
+Peaceful Garden:
+- Different seeds.
+- Garden areas.
+- Flower collections.
+- Decoration unlocks.
+
+Peaceful World:
+- Different environments.
+- New interactions.
+- New atmosphere presets.
+
+Fashion Studio:
+- New styling themes.
+- New outfits.
+- New accessories.
+- Creative challenges.
+
+Dream Island:
+- New locations.
+- Secret paths.
+- Exploration discoveries.
+
+Room Makeover:
+- Different rooms.
+- Increasing organization complexity.
+- More decoration themes.
+
+Hidden Object Hunt:
+- Different environments.
+- New missions.
+- New object arrangements.
+- Increasing search difficulty.
+
+Running Adventure:
+- New obstacle combinations.
+- New playable stages.
+- Increasing difficulty.
+
+### Rewards
+
+Implement:
+- Stars.
+- Coins or an equivalent in-game currency.
+- Collectibles.
+- Achievements.
+- Badges.
+- Unlockable decorations.
+- Cosmetic rewards.
+- Progress milestones.
+
+Rewards should reflect meaningful gameplay achievements.
+
+Do not create meaningless buttons that claim to give rewards without updating the player's actual inventory or saved state.
+
+### Daily and weekly challenges
+
+Create optional challenges such as:
+- Discover three new objects.
+- Plant a new flower.
+- Create a new outfit.
+- Complete a room organization task.
+- Explore a new island location.
+
+Only show challenges that are actually playable and connected to the reward system.
+
+### My Collection
+
+Create a collection screen where users can view:
+- Saved outfits.
+- Garden decorations.
+- Discovered objects.
+- Island discoveries.
+- Room designs.
+- Achievements.
+- Unlocked items.
+
+---
+
+# PART 7 — SAVE SYSTEM AND USER PROGRESS
+
+This is a critical requirement.
+
+Users must not lose their progress when they refresh the page, close the application, or return later.
+
+Implement a reliable persistence system appropriate to the existing architecture.
+
+Save:
+
+- Onboarding completion.
+- Game preferences.
+- Unlocked worlds.
+- Selected world.
+- Garden state.
+- Planted flowers.
+- Garden decorations.
+- Peaceful World settings where applicable.
+- Saved fashion outfits.
+- Room layouts.
+- Room completion states.
+- Island discoveries.
+- Hidden Object Hunt progress.
+- Running Adventure progress.
+- Coins and rewards.
+- Achievements.
+- Completed levels.
+
+Include a "Continue Where You Left Off" feature.
+
+When users return, allow them to resume their last experience.
+
+If the project currently uses browser storage, inspect its implementation and improve it appropriately.
+
+If a backend and authentication system already exist, reuse them where suitable.
+
+Do not introduce unnecessary external services.
+
+Handle missing, invalid, or corrupted saved data gracefully.
+
+---
+
+# PART 8 — PREMIUM UI/UX DESIGN SYSTEM
+
+I want Little Escape to look like a polished commercial-quality casual game.
+
+Avoid generic AI-generated website styling.
+
+Do not make it look like a SaaS dashboard.
+
+### Visual direction
+
+Use a premium, welcoming, playful, modern game aesthetic.
+
+Color palette:
+- Sea green.
+- Teal.
+- Aqua.
+- Turquoise.
+- Ocean blue.
+- Soft natural neutrals.
+- Warm highlights.
+- Pink only as an optional accent.
+
+Do not make the entire game pink.
+
+The game should feel welcoming to different audiences.
+
+### Typography
+
+Replace the existing poor or inconsistent typography with a professional gaming font system.
+
+Use:
+- Strong, readable headings.
+- Clean sans-serif body text.
+- Clear button labels.
+- Consistent hierarchy.
+- Appropriate text sizes.
+- Good contrast.
+
+Typography must be readable on mobile screens.
+
+### Buttons and interactions
+
+Every meaningful button must work.
+
+Provide:
+- Hover feedback.
+- Tap feedback.
+- Press states.
+- Smooth transitions.
+- Subtle shimmer or sparkle where appropriate.
+- Appropriate success feedback.
+- Disabled states when necessary.
+
+Avoid excessive animations.
+
+### Animation system
+
+Use smooth, purposeful animations for:
+- World transitions.
+- Menus.
+- Character movement.
+- Object placement.
+- Flower growth.
+- Butterfly movement.
+- Island exploration.
+- Rewards.
+- Room transformation.
+- Fashion previews.
+
+Animations should not make gameplay slow or confusing.
+
+### Sound design
+
+Add optional sound effects and ambient audio where appropriate.
+
+Provide:
+- Master volume.
+- Music volume.
+- Sound effects volume.
+- Mute.
+- Per-world audio control where practical.
+
+Never assume sound should always play.
+
+### Responsive design
+
+Support:
+- Desktop.
+- Laptop.
+- Tablet.
+- Mobile.
+
+Make gameplay controls comfortable for touchscreens.
+
+Ensure objects, text, buttons, and menus remain usable on small screens.
+
+---
+
+# PART 9 — FIRST-TIME USER TUTORIAL
+
+Create an optional, interactive tutorial for first-time users.
+
+The tutorial should demonstrate:
+
+1. How to enter a world.
+2. How to interact with objects.
+3. How to use the controls.
+4. How to save progress.
+5. How to switch worlds.
+
+Use short visual instructions.
+
+Provide:
+- Skip Tutorial.
+- Replay Tutorial.
+- Contextual hints.
+
+Do not repeatedly show the same tutorial to returning users unless requested.
+
+---
+
+# PART 10 — ACCESSIBILITY AND PLAYER COMFORT
+
+Include:
+- Readable text.
+- Clear visual contrast.
+- Scalable or appropriately responsive interface.
+- Sound controls.
+- Reduced-motion option where feasible.
+- No-pressure gameplay options.
+- Clear instructions.
+- Easy pause and exit.
+- Keyboard support for appropriate desktop controls.
+- Touch-friendly controls.
+
+Do not use flashing effects excessively.
+
+Do not punish users for leaving a world or taking a break.
+
+---
+
+# PART 11 — OPTIONAL MONETIZATION ARCHITECTURE
+
+Keep monetization optional and ethical.
+
+If the existing project supports monetization, prepare a structure for:
+
+- Optional rewarded advertisements.
+- Cosmetic purchases.
+- Optional VIP experience.
+- Ad-free option.
+
+Important:
+- No forced advertisements between every activity.
+- No pay-to-win mechanics.
+- Do not lock the core gameplay behind payments.
+- Do not make purchases necessary to save progress.
+- Clearly label paid content.
+- Keep age-appropriate privacy and safety in mind.
+
+Do not integrate real payment processing or advertising SDKs unless the existing project and its configuration support them and the required credentials are available.
+
+---
+
+# PART 12 — TECHNICAL IMPLEMENTATION REQUIREMENTS
+
+Work within the existing technology stack.
+
+Use clean, reusable, maintainable components.
+
+Separate concerns appropriately:
+
+- Main navigation.
+- World selection.
+- Individual world modules.
+- Gameplay logic.
+- Character systems.
+- Animation systems.
+- Inventory.
+- Rewards.
+- Progress persistence.
+- Audio settings.
+- User preferences.
+
+Avoid:
+- Unnecessary duplicated code.
+- Giant unmaintainable components.
+- Fake interactions.
+- Dead buttons.
+- Hardcoded progress that never changes.
+- Placeholder gameplay presented as finished.
+- Broken navigation.
+- Unnecessary dependencies.
+- Excessive background effects that damage performance.
+
+Use appropriate game-state management for the existing framework.
+
+Ensure:
+- No major console errors.
+- No broken routes.
+- No missing assets.
+- No interaction conflicts.
+- No accidental data loss.
+- No severe performance issues.
+
+If an advanced feature cannot be fully implemented using the current architecture, implement the strongest working version possible and clearly document the remaining technical dependency.
+
+Never claim an unfinished feature is complete.
+
+---
+
+# PART 13 — DEVELOPMENT EXECUTION ORDER
+
+Implement the project in manageable phases.
+
+Do not attempt to create superficial versions of every world just to make the project look complete.
+
+Prioritize actual functionality.
+
+### PHASE 1 — Existing Project Foundation
+
+- Inspect the current project.
+- Preserve existing functionality.
+- Establish the Little Escape visual identity.
+- Implement navigation.
+- Implement onboarding.
+- Implement mood-based selection.
+- Implement world selection.
+- Establish save-state architecture.
+
+### PHASE 2 — Core Interactive Worlds
+
+Implement:
+
+1. Peaceful Garden.
+2. Peaceful World.
+3. Room Makeover.
+
+Focus on actual interactions and saved state.
+
+### PHASE 3 — Discovery and Creativity
+
+Implement:
+
+4. Hidden Object Hunt.
+5. Fashion Studio.
+6. Dream Island.
+
+Ensure each world has real gameplay and unique mechanics.
+
+### PHASE 4 — Existing Game Upgrade
+
+Upgrade:
+
+- Running Adventure.
+- Existing Messy Room.
+- Existing Dream Room.
+
+Preserve existing working functionality.
+
+### PHASE 5 — Progression and Engagement
+
+Implement:
+
+- Levels.
+- Missions.
+- Collections.
+- Rewards.
+- Achievements.
+- Daily and weekly challenges.
+- Continue Where You Left Off.
+
+### PHASE 6 — Final Polish
+
+- Responsive layouts.
+- Animation refinement.
+- Audio controls.
+- Accessibility.
+- Performance optimization.
+- Error handling.
+- Quality assurance.
+
+This is an implementation order, not permission to leave the other worlds as decorative placeholders.
+
+If the environment has execution or context limits, finish one coherent working phase at a time, preserve the work, and continue from the next incomplete phase.
+
+---
+
+# PART 14 — REQUIRED TESTING AND ACCEPTANCE CRITERIA
+
+Before declaring implementation complete, test the following.
+
+## Navigation
+
+- Can users open every world?
+- Does mood selection open the correct world?
+- Can users skip mood selection?
+- Can users return to the main screen?
+- Can users switch between worlds without broken navigation?
+
+## Peaceful Garden
+
+- Can users plant flowers?
+- Can they water plants?
+- Do flowers grow and bloom?
+- Can decorations be placed?
+- Is garden progress saved?
+
+## Peaceful World
+
+- Can users open all available environments?
+- Do interactive objects respond?
+- Can users customize the atmosphere?
+- Do sound controls work?
+
+## Fashion Studio
+
+- Can users change clothing?
+- Can they combine accessories?
+- Can they customize compatible colors?
+- Can they save and reopen outfits?
+- Does Randomize work?
+
+## Dream Island
+
+- Can users move around?
+- Can they interact with objects?
+- Are discoveries recorded?
+- Can they unlock available locations?
+
+## Room Makeover
+
+- Can objects actually be dragged?
+- Does the game recognize correct placements?
+- Does the room visibly transform?
+- Does the completion indicator update?
+- Can users save room designs?
+
+## Hidden Object Hunt
+
+- Are target objects actually present?
+- Can users find objects by tapping them?
+- Do drawers and other interactive elements work?
+- Do clues and hints work?
+- Does progress update?
+- Can users complete multiple levels?
+
+## Running Adventure
+
+- Are Jump, Slide, and Roll visible together?
+- Do all three controls work?
+- Are transitions between animations smooth?
+- Do obstacles and collisions work?
+- Does game-over behavior work correctly?
+
+## Persistence
+
+- Refresh the application.
+- Close and reopen it.
+- Verify that important progress remains saved.
+- Verify that the last saved world state is restored.
+
+## Responsive testing
+
+Test the main flows on desktop and mobile-sized screens.
+
+### Completion standard
+
+A feature is not complete merely because:
+- Its button exists.
+- Its screen looks attractive.
+- Its card can be clicked.
+- Its animation plays.
+
+A feature is complete only when its intended interaction, gameplay logic, feedback, and relevant progress updates actually work.
+
+---
+
+# PART 15 — FINAL DELIVERABLES
+
+When implementation is complete, provide:
+
+1. A summary of the existing project architecture.
+2. A list of major changes made.
+3. A list of implemented worlds.
+4. A list of working gameplay features.
+5. A list of preserved and upgraded existing features.
+6. A summary of save and progress functionality.
+7. Testing results.
+8. Any remaining bugs or incomplete features.
+9. Any external credentials or services still required.
+10. Clear instructions for running and building the application.
+
+Do not claim that the game is Play Store-ready merely because the web application works. Actual mobile builds, device compatibility, privacy, security, and store-release requirements must be verified separately.
+
+---
+
+# FINAL PRODUCT QUALITY EXPECTATION
+
+I want Little Escape to feel like a real, carefully designed casual gaming product.
+
+When someone opens it, they should immediately understand that they have entered a world where they can choose their own experience.
+
+One moment they can plant flowers.
+
+Another moment they can explore a peaceful lake.
+
+They can create a new outfit, discover a secret island, organize a messy room, solve a hidden mystery, or enjoy a running adventure.
+
+Every world should offer a distinct reason to play.
+
+**My non-negotiable principles:**
+
+1. Real gameplay over decorative screens.
+2. Functional interactions over fake buttons.
+3. Meaningful variety over repetitive mini-games.
+4. Freedom of choice over forced progression.
+5. Beautiful visuals supported by smooth performance.
+6. Saved progress over temporary demonstrations.
+7. A consistent product identity across every world.
+
+**MOST IMPORTANT INSTRUCTION:**
+
+Start by inspecting my existing project and its files. Then implement these features directly into it, preserving what already works.
+
+Do not respond with only a proposal, a feature list, or a visual concept.
+
+I want you to actually modify the code, connect the interactions, implement the gameplay logic, and test the resulting application.
+
+If you cannot complete everything in one execution, work in phases, preserve completed work, and clearly continue from the remaining implementation tasks.
+
+Build **Little Escape — Your World. Your Mood. Your Little Happiness.**

@@ -1,0 +1,20 @@
+{
+  "name": "Barbie: Malibu Runway Dash",
+  "short_name": "Malibu Dash",
+  "description": "Coastal 60fps boardwalk runner, Dream Room organizer, hidden object search adventure, and style studio with 240 levels.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#F4FAFB",
+  "theme_color": "#0F766E",
+  "categories": ["games", "casual"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
